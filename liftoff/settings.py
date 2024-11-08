@@ -93,10 +93,10 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'liftoff',  # Database name
+        'NAME': 'railway',  # Database name
         'USER': 'root',  # Default XAMPP MySQL user
-        'PASSWORD': '',  # Default XAMPP MySQL password (usually empty)
-        'HOST': 'localhost',  # Host name
+        'PASSWORD': 'TypKYHWdDmUtREhkeMVAMYarCciYWTQj',  # Default XAMPP MySQL password (usually empty)
+        'HOST': 'mysql.railway.internal',  # Host name
         'PORT': '3306',  # Default MySQL port
         
     },
