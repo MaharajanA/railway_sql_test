@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'accounts',
     'crispy_forms',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -50,12 +51,16 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'liftoff.urls'
 
 AUTH_USER_MODEL = 'accounts.User'
 
+CORS_ALLOWED_ORIGINS = [
+    'https://railwaysqltest-production.up.railway.app',
+]
 
 TEMPLATES = [
     {
