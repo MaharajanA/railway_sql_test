@@ -24,7 +24,6 @@ numpy==2.0.1
 
 packaging==24.1
 pandas==2.2.2
-pefile==2023.2.7
 
 pyinstaller==6.9.0
 pyinstaller-hooks-contrib==2024.8
