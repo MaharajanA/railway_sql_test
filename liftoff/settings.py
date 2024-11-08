@@ -61,7 +61,9 @@ AUTH_USER_MODEL = 'accounts.User'
 CORS_ALLOWED_ORIGINS = [
     'https://railwaysqltest-production.up.railway.app',
 ]
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://railwaysqltest-production.up.railway.app',
+]
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
