@@ -90,6 +90,9 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 #         'PORT': os.environ["MYSQL_PORT"],
 #     }
 # }
+import pymysql
+
+pymysql.install_as_MySQLdb()
 DATABASES = {
    'default': {
         'ENGINE': 'django.db.backends.mysql',
